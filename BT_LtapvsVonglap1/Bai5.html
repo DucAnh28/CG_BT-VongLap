@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let number1 = parseInt(prompt("nhập tổng số mà bạn cần"))
+    let n1 = 0
+    let n2 = 1
+    let sumn1n2 =  n1+ n2
+    // let i = 0
+    for (let j = 0; j < (number1-2); j++) {
+        // console.log(sumn1n2)
+        nextNumber = n1 + n2;
+        n1 = n2;
+        n2 = nextNumber;
+        sumn1n2 += n2;
+        // document.write(" "+n2)
+        }
+
+    document.write(sumn1n2)
+</script>
+</body>
+</html>

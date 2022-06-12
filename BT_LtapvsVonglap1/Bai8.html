@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<h1>Hãy đoán thử xem</h1>
+<button onclick="test()">Bắt đầu chơi</button>
+</body>
+<script>
+    let count = 0
+    function test(){
+        let u = parseInt(prompt("Nhập số mà bạn muốn trong khoảng"));
+        let randomNum = parseInt(Math.random()*u)
+        console.log(randomNum);
+        alert("bạn có tối đa 3 lần đoán");
+        let checkNum = parseInt(prompt("Nhập số mà bạn đoán"));
+        while (checkNum!=randomNum){
+            if (count==3){
+                alert("Bạn hết số lần đoán")
+                break
+            }
+            else {
+                if (checkNum<randomNum){
+                    alert("số bạn đoán bé hơn số đúng")
+                }
+                else {
+                    if (checkNum>randomNum){
+                        alert("số bạn đoán lớn hơn số đúng")
+                    }
+                    else {
+                        if (checkNum == randomNum) {
+                            alert("chúc mừng bạn đã đoán đúng")
+                            break
+                        }
+                    }
+                }
+            }
+            let checkNum = parseInt(prompt("Nhập số mà bạn đoán"));
+            count++
+        }
+    }
+</script>
+</html>
