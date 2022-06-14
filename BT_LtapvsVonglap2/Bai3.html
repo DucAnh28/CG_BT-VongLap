@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ tam giác vuông</title>
+</head>
+<body>
+<script>
+    // tam giác 1
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < i; j++) {
+            document.write("*");
+        }
+        document.write("*" + "<br>");
+    }
+    document.write("<br>")
+    // tam giác 2
+    for (let i = 5; i > 0; i--) {
+        for (let j = 1; j < i; j++) {
+            document.write("*");
+        }
+        document.write("*" + "<br>");
+    }
+    document.write("<br>")
+    // tam giác 3
+    document.write("<div style='width: 50px' align='right'>")
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < i; j++) {
+            document.write("*")
+        }
+        document.write("*" + "<br>")
+    }
+    document.write("</div>")
+    document.write("<br>")
+    // tam giác 4
+    document.write("<div style='width: 50px' align='right'>")
+    for (let i = 5; i > 0; i--) {
+        for (let j = 0; j < i; j++) {
+            let sao = "*"
+            document.write(sao)
+        }
+        document.write("<br>")
+    }
+    document.write("</div>")
+
+</script>
+</body>
+</html>
